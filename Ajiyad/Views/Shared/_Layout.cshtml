@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Ajiyad - @ViewData["Title"] </title>
+    <link rel="icon" type="image/x-icon" href="~/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="~/css/fontawesome.css">
+    <link rel="stylesheet" href="~/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="~/css/owl.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link rel="stylesheet" href="~/css/site.css"> 
+<link href="~/css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <!-- <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div> -->
+    <!-- ***** Preloader End ***** -->
+
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="info">
+                        <li><i class="fa fa-envelope"></i>info@ajiyad.com</li>
+                        <li>
+                            <i class="fa fa-map"></i>Building No 63, Mezzanine 1 Al Falah Street - Abu dhabi
+                        </li>
+                        <li><i class="fa fa-phone"></i>+971 52 244 1484</li>
+                        <li><i class="fa fa-phone"></i>+971 526267200 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a asp-action="Index" class="logo">
+                            <img src="~/images/logo.png" class="pb-3 pt-2" width="100">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav d-lg-flex align-items-lg-center m-0">
+                            <li><a asp-action="Index" class="active">Home</a></li>
+                            <li><a href="/Home/Index/#projects">Projects</a></li>
+                            <li><a asp-action="SisterCompany">Our Sister Company</a></li>
+                            <li><a href="~/documents/company-profile.pdf" target="_blank">Company Profile</a></li>
+                            <li><a href="/Home/Index/#ContactUs">Contact Us</a></li>
+
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+  
+        <main role="main">
+            @RenderBody()
+        </main>
+   
+
+    <footer>
+        <div class="container text-center d-flex align-items-center justify-content-center h-100">
+          
+                <p>
+                    © AJIAD - 2024, All rights reserved
+                </p>
+           
+        </div>
+    </footer>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/isotope.min.js"></script>
+    <script src="~/js/owl-carousel.js"></script>
+    <script src="~/js/counter.js"></script>
+    <script src="~/js/site.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
